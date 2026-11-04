@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #8f9aff;
+    color: #0b0650;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 30px 20px;
+    background-color: #492474;
+    color: rgb(211, 166, 241);
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: 94%;
+    max-width: 1150px;
+    margin: 25px auto;
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+h2 {
+    color: #542474;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: white;
+}
+
+caption {
+    padding: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid #b8afa3;
+    padding: 14px;
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+}
+
+thead th {
+    background-color: #542474;
+    color: white;
+}
+
+tbody th {
+    color: #542474;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eacaff;
+}
+
+td img {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.mobile-label {
+    display: none;
+}
+
+footer {
+    padding: 18px;
+    background-color: #999bfa;
+    text-align: center;
+}
+
+footer a {
+    color: #542474;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: 3px solid #542474;
+    outline-offset: 4px;
+}
+
+/* Tablet layout */
+@media screen and (max-width: 800px) {
+    main {
+        width: 96%;
+    }
+
+    th,
+    td {
+        padding: 9px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+/* Phone layout: keep all five fields visible for every truck. */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 24px 15px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    table,
+    caption,
+    tbody,
+    tr,
+    tbody th,
+    td {
+        display: block;
+        width: 100%;
+    }
+
+    /* Keep column headings available to screen readers. */
+    thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+    }
+
+    table {
+        background-color: transparent;
+    }
+
+    caption {
+        padding: 0 0 15px;
+    }
+
+    tbody tr {
+        margin-bottom: 20px;
+        border: 1px solid #a05bee;
+        background-color: white;
+    }
+
+    tbody th,
+    td {
+        padding: 12px;
+        border: 0;
+        border-bottom: 1px solid #a05bee;
+    }
+
+    tbody th {
+        background-color: #a05bee;
+        font-size: 1.1rem;
+    }
+
+    td:last-child {
+        border-bottom: 0;
+    }
+
+    .mobile-label {
+        display: block;
+        margin-bottom: 5px;
+        color: #542474;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    td img {
+        max-width: 100%;
+    }
+}
